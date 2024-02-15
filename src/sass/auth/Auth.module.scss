@@ -1,0 +1,74 @@
+@import "../variables/colors.scss";
+.auth {
+  max-width: 327px;
+  border-radius: 10px;
+  background-color: #161d2f;
+  margin: 0 auto;
+  padding: 24px;
+  &__icon {
+    padding: 48px 171px 132px 172px;
+    text-align: center;
+  }
+  &__title {
+    color: $light;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    margin: unset;
+    background-color: transparent;
+    margin-bottom: 40px;
+  }
+  &__input {
+    border: none;
+    border-bottom: 1px solid #5a698f;
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 24px;
+    color: $light;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 16px;
+    padding-bottom: 18px;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $light;
+    }
+    &:invalid {
+      border-color: red;
+    }
+  }
+  &__button {
+    padding: 14px 67.5px 15px 68.5px;
+    background-color: $secondary;
+    color: $light;
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  &__info {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $light;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    gap: 9px;
+    &-2 {
+      display: block;
+      color: $secondary;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      cursor: pointer;
+    }
+  }
+}
