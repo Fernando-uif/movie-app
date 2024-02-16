@@ -33,7 +33,7 @@
     line-height: normal;
     padding-left: 16px;
     padding-bottom: 18px;
-
+    box-sizing: border-box;
     &:focus {
       outline: none;
       border-bottom: 1px solid $light;
@@ -50,6 +50,8 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    display: block;
+    text-decoration: none;
   }
   &__info {
     font-size: 15px;

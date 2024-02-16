@@ -1,4 +1,5 @@
 import authStyles from "@/sass/auth/Auth.module.scss";
+import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
 
 const Login = ({
@@ -20,9 +21,9 @@ const Login = ({
         type="password"
         placeholder="Password"
       />
-      <button className={`${authStyles["auth__button"]}`}>
-        auth to your account
-      </button>
+      <Link href={"/home/"} className={`${authStyles["auth__button"]}`}>
+        Login to your account
+      </Link>
       <div className={`${authStyles["auth__info"]}`}>
         Don&apos;t have an account?{" "}
         <span
