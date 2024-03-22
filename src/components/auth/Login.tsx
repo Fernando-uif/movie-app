@@ -21,9 +21,9 @@ const Login = ({
         type="password"
         placeholder="Password"
       />
-      <Link href={"/home/"} className={`${authStyles["auth__button"]}`}>
-        Login to your account
-      </Link>
+      <button className={`${authStyles["auth__button"]}`}>
+        <Link className={`${authStyles['auth__button--link']}`} href={"/dashboard"}>Login to your account</Link>
+      </button>
       <div className={`${authStyles["auth__info"]}`}>
         Don&apos;t have an account?{" "}
         <span

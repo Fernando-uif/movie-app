@@ -30,7 +30,7 @@ const SignUp = ({
         Create an account
       </button>
       <div className={`${authStyles["auth__info"]}`}>
-        Already have an account?{" "}
+        Already have an account?
         <span
           className={`${authStyles["auth__info-2"]}`}
           onClick={() => {

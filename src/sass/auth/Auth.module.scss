@@ -1,4 +1,8 @@
 @import "../variables/colors.scss";
+
+@import "../mixins/text.scss";
+@import "../mixins/buttons.scss";
+
 .auth {
   max-width: 327px;
   border-radius: 10px;
@@ -10,15 +14,7 @@
     text-align: center;
   }
   &__title {
-    color: $light;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.5px;
-    margin: unset;
-    background-color: transparent;
-    margin-bottom: 40px;
+    @include main-title;
   }
   &__input {
     border: none;
@@ -43,15 +39,11 @@
     }
   }
   &__button {
-    padding: 14px 67.5px 15px 68.5px;
-    background-color: $secondary;
-    color: $light;
-    margin-bottom: 24px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    display: block;
-    text-decoration: none;
+    @include button-primary;
+    &--link {
+      text-decoration: none;
+      color: inherit;
+    }
   }
   &__info {
     font-size: 15px;

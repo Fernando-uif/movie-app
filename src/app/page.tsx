@@ -1,13 +1,5 @@
-"use client";
-
-import { AuthProvider } from "@/context/auth/AuthContext";
-
-import Auth from "@/components/auth/Auth";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <AuthProvider>
-      <Auth />
-    </AuthProvider>
-  );
+  redirect("/login");
 }

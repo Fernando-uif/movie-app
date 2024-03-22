@@ -1,0 +1,14 @@
+@import "../variables/colors.scss";
+
+@mixin main-title {
+  color: $light;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  margin: unset;
+  background-color: transparent;
+  margin-bottom: 40px;
+  @content;
+}
