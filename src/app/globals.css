@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #10141e;
 }
 
 /**
@@ -348,7 +349,4 @@ template {
 
 [hidden] {
   display: none;
-}
-* {
-  background-color: #10141e;
 }

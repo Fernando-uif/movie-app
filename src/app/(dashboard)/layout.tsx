@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Outfit } from "next/font/google";
 import { Metadata } from "next";
 
-import Icon from "@/components/icons/Icon";
+import Icon from "@/app/components/icons/Icon";
 
 import layoutStyles from "@/sass/layout/HomeLayout.module.scss";
 

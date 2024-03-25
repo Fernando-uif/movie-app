@@ -2,7 +2,7 @@
 
 import { AuthProvider } from "@/context/auth/AuthContext";
 
-import Auth from "@/components/auth/Auth";
+import Auth from "@/app/components/auth/Auth";
 
 export default function Home() {
   return (

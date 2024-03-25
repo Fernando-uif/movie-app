@@ -1,0 +1,13 @@
+@import "../../mixins/text.scss";
+.cardMovie {
+  margin-bottom: 24px;
+  margin-left: 25px;
+  &__wrapperMovies {
+    display: flex;
+    gap: 16px;
+  }
+  &__title {
+    @include secondary-title;
+  }
+ 
+}

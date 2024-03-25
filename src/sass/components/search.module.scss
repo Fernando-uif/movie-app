@@ -1,6 +1,7 @@
 @import "../mixins/input.scss";
 .search {
   @include input;
+  background-color: inherit;
   &__icon {
     svg {
       width: 32px;
