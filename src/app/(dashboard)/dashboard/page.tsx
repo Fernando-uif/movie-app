@@ -1,14 +1,17 @@
+
 import Search from "@/app/components/Search/Search";
 import { CardMovie } from "@/app/components/movie/card-movie/CardMovie";
-import React from "react";
 
-const page = () => {
+
+const DashBoardPage = () => {
+
+
   return (
     <>
       <Search />
-      <CardMovie title="Trending" />
+      <CardMovie title="Trending"  />
     </>
   );
 };
 
-export default page;
+export default DashBoardPage;

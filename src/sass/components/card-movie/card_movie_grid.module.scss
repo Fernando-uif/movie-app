@@ -1,0 +1,14 @@
+@import "../../mixins/text.scss";
+.cardMovieGrid {
+  margin-bottom: 24px;
+  margin-left: 25px;
+  &__wrapperMovies {
+    display: grid;
+    gap: 16px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+  &__title {
+    @include secondary-title;
+  }
+}

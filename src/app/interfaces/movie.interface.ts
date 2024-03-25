@@ -1,14 +1,16 @@
+import { JsonValue } from "@prisma/client/runtime/library";
+
 export interface Movie {
   title: string;
   thumbnail: Thumbnail;
   year: number;
-  category: Category;
+  category: string;
   rating: string;
   isBookmarked: boolean;
   isTrending: boolean;
 }
 
-export type Category = "movie" | "tv-series";
+
 
 export interface Thumbnail {
   trending: Trending;

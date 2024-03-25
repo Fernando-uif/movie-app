@@ -5,9 +5,10 @@
   &__wrapperMovies {
     display: flex;
     gap: 16px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
   }
   &__title {
     @include secondary-title;
   }
- 
 }
